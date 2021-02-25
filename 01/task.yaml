@@ -1,0 +1,52 @@
+accessible: true
+author: Hugo Delporte
+categories: []
+contact_url: ''
+context: |-
+    Ecrivez une fonction ``mois_le_plus_neigeux`` qui reçoit en paramètre un fichier de ce type et retourne un tuple de int du type ``(mois, année, nombre_de_cm_tombés)``. Pour le fichier ci-dessous, la fonction devrait donc retourner ``(1, 2015, 35)``
+
+    .. code-block:: text
+
+        2015
+        02/01 23
+        03/01 5
+        04/01 7
+        18/03 6
+        2016
+        06/08 12
+
+    Si une ligne du fichier n'est pas correcte, passez-la. Si le fichier est vide, retournez ``(0, 0, 0)``. Les lignes des années seront toujours correctes.
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 'Question 1 : Chutes de neiges'
+network_grading: false
+order: 2
+problems:
+    q1:
+        name: Implementation
+        header: ''
+        type: code
+        default: |-
+            def mois_le_plus_neigeux(file):
+                """
+                Détermine le mois le plus neigeux selon un fichier
+                :param file: fichier qui recense toutes les chutes de neiges sur plusieurs années
+                :return: un tuple de la forme (mois, année, nombre_de_cm_tombés)
+                """
+                pass
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
