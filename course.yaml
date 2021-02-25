@@ -1,0 +1,34 @@
+admins:
+- cdeknop
+- hverhaeghe
+- detry
+- abonhivers
+- CorentinDetry
+- akakomandusu
+- hdelport
+- jacobt
+tutors: []
+groups_student_choice: false
+accessible: false
+registration: true
+registration_password: projet2021
+registration_ac: null
+name: P1_2A_3
+description: ''
+allow_unregister: true
+allow_preview: false
+registration_ac_list: []
+is_lti: false
+lti_url: ''
+lti_keys: {}
+lti_send_back_grade: false
+task_dispenser: toc
+dispenser_data:
+-   config:
+        closed: false
+    id: exercices
+    rank: 0
+    tasks_list:
+        '01': 0
+        '02': 1
+    title: Exercices
