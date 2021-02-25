@@ -1,0 +1,52 @@
+accessible: true
+author: Corentin Detry
+categories: []
+contact_url: mailto:corentin.detry@student.uclouvain.be
+context: |
+    Vous avez été embauché par Europol pour analyser des données, une de vos premières taches est de trouver les numéros de téléphones Belges dans un énorme fichier.
+
+    Exemple de numero valide Belge : ``0471/71.71.71``
+
+    Exemple de fichier texte type:
+
+
+    .. code-block:: text
+
+        6655/34.20.34
+        7505/21.63.97
+        9450/90.05.87
+        0451/12.39.94
+        5209/71.71.92
+        8489/34.00.32
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 'Question 2 : Matching Phone Numbers'
+network_grading: false
+problems:
+    q1:
+        name: Matching phone numbers
+        header: |-
+            Ecriver le corps de la fonction qui permet de déterminer si un fichier texte contient bien des numéros de téléphone Belge.
+            Votre fonction doit renvoyer une **liste** avec tout les numéros de téléphones Belges qui se trouve dans le fichier. Si il y a rien, retourner la **liste vide**. (regex est autorisé)
+
+            .. code-block:: python
+
+                def matching_phone_numbers(filename):
+        type: code
+        default: ''
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
