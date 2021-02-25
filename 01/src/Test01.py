@@ -20,6 +20,7 @@ class TestMedian(unittest.TestCase):
 
     def setUp(self) -> None:
         self.test_files = ['test1.txt', 'test2.txt', 'test3.txt', 'test4.txt', 'test5.txt', 'test6.txt']
+        
         self.test1_str = "2015\n02/01 23\n03/01 5\n04/01 7\n18/03 6\n2016\n06/08 12"
         self.test2_str = "2015\n02/0123\n03/01 5\n04/01 7\n18/03 6\n2016\n06/08 12"
         self.test3_str = "vide"
@@ -28,12 +29,12 @@ class TestMedian(unittest.TestCase):
         self.test6_str = ""
 
         ligne = "{}/{} {}\n"
-        with open('test6.txt', 'w') as f:       # crée un fichier de manière aléatoire
+        with open('test6.txt', 'w') as f:       # crée un fichier de manière aléatoire et ajoute son str dans test6_str
             for year in range(2018, 2021):
                 f.write(str(year) + "\n")
                 self.test6_str += str(year) + "\n"
                 for i in range(r(0, 6)):
-                    to_write = ligne.format(r(0, 28), r(0, 12), r(0, 20))
+                    to_write = ligne.format(r(1, 28), r(1, 12), r(1, 20))
                     self.test6_str += to_write
                     f.write(to_write)
 
@@ -44,15 +45,19 @@ class TestMedian(unittest.TestCase):
             try:
                 stu_ans = student.mois_le_plus_neigeux(file)
                 corr_ans = corr.mois_le_plus_neigeux(file)
+                # Test du type retourné
                 self.assertEqual(type(stu_ans), tuple, ans_type.format(type(stu_ans), self.tests_str[i]))
+                # Test de la longueur du tule retourné
                 self.assertEqual(len(stu_ans), 3, ans_len.format(len(stu_ans), self.tests_str[i]))
-                for j in range(3):
+                for j in range(3):    # Test du fait que les trois éléments du tuple retourné soient des int
                     self.assertIsInstance(stu_ans[j], int, ans_instance.format(i, type(stu_ans[0]), int, self.tests_str[i]))
+                # Test pour voir si c'est la bonne réponse
                 self.assertEqual(stu_ans, corr_ans, ans_mauvais.format(corr_ans, stu_ans, self.tests_str[i]))
             except Exception as e:
-                if isinstance(e, AssertionError):
+                if isinstance(e, AssertionError):       # Pour pas avoir un message d'erreur trop long
                     self.fail()
                 else:
+                    # Pour les erreurs qui ont pu être causées par la solution de l'étudiant
                     self.fail(ans_exception.format(type(e), e, self.tests_str[i]))
 
 
