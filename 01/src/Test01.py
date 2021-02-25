@@ -29,7 +29,7 @@ class TestMedian(unittest.TestCase):
 
         ligne = "{}/{} {}\n"
         with open('test6.txt', 'w') as f:       # crée un fichier de manière aléatoire
-            for year in range(2015, 2021):
+            for year in range(2018, 2021):
                 f.write(str(year) + "\n")
                 self.test6_str += str(year) + "\n"
                 for i in range(r(0, 6)):
