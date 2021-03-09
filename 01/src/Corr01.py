@@ -20,6 +20,8 @@ def mois_le_plus_neigeux(file):
                 dic[year][int(cleaned_line[1])] += int(cleaned_line[2])
             else:
                 dic[year][int(cleaned_line[1])] = int(cleaned_line[2])
+    # Ici, un dictionnaire du type {2015 : {01: 34, 02: 5, ...}, ...} a été créé. On va désormais rechercher le mois où
+    # la valeur est la plus élevée pour retourner le bon tuple
 
     maxi = (0, 0, 0)
     for y in dic.keys():
