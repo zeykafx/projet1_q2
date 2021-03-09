@@ -16,6 +16,7 @@ def is_phone_number_regex(filename):
         # quelconque à cet endroit de l'expression.
         # le string est "raw" car sinon il faut "escape" les "\" donc "\d" serait "\\d"
         regex_expression = re.compile(r'04\d{2}/\d{2}.\d{2}.\d{2}')
+        # remplacer '04' par '+324|04' si on veut matcher et des numéros commencent par +324 et ceux commencent par 04
 
         # ici le match object va être vrai ssi il a trouvé un string (dans ce ca si, un numéro de type belge)
         # qui correspond à l'expression définie juste au dessus. le mo va donc chercher l'expression dans chaque ligne
