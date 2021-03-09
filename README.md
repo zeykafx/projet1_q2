@@ -1,4 +1,5 @@
 # Projet 1 - Q2 :
+Notre groupe est composé de 5 personnes mais 2 sont absents/n'ont pas fait leur tâches.
 
 Lien vers le cours inginious: https://inginious.info.ucl.ac.be/course/P1_2A_3
 
@@ -21,7 +22,8 @@ en regex `+324|04` il me semble que cela aurait compliqué l'exercice pour très
 
 • A la demande des reviews, l'énoncé a été modifié pour introduire un contexte plus clair et cohérent. 
 
-• Il a été décidé d’approfondir  l'utilisation de l'hérédité en limitant la classe vehicule à un seul attribut au lieu de deux. Il faut désormais définir l'attribut      color depuis la classe camion.
+• Il a été décidé d’approfondir l'utilisation de l'hérédité en limitant la classe vehicule à un seul attribut au lieu de deux.
+Il faut désormais définir l'attribut color depuis la classe camion.
 
 • L'utilisation de l'index a été délaissée au profit de la valeur de l'attribut
 
