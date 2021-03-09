@@ -1,0 +1,56 @@
+accessible: true
+author: Jacob Thomas
+categories: []
+contact_url: mailto:thomas.jacob@student.uclouvain.be
+context: |-
+    Le patron d'une société de transport a besoin de nouveau camions, cependant il ne souhaite pas acheter des camions jugés trop ressemblant.(Ayant la même marque **&** couleur. Il accepte quand même que les camions aient **1** attribut identique sur les deux camions.)
+
+    Admettons la classe vehicule définie par un attribut (make correspond à la marque).
+
+    Un fournisseur propose au patron de faire l'acquisition d'un camion **FORD** **- BLUE** et d'un camion **VOLKSWAGEN** **- BLUE**.
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        memory: '100'
+        time: '30'
+        hard_time: ''
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 'Question 3 : Comparaisons et Hérédité'
+network_grading: false
+problems:
+    q1:
+        name: Comparaisons et Hérédité
+        header: |-
+            Concevoir un code capable de comparer les attributs de deux camions.
+
+            .. code-block:: python
+
+                class vehicule:
+                    def __init__(self, make=0):
+                        self.make = make
+
+                    # valeur des deux attributs :
+                    # make = ["Ford", "Renault", "Peugeot", "Volkswagen", "Opel"]
+                    # color = ["Black", "Blue", "Grey", "Red", "Tan"]
+        type: code
+        default: |+
+            class camion(vehicule):
+                def __init__(self, make, color):
+                    # Créer aussi l'atribut color (Il n'hérite pas de la classe véhicule)
+
+
+                def __eq__(self, other):
+                    # A COMPLETER
+
+
+        language: python
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
