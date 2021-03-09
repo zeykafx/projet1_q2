@@ -40,7 +40,8 @@ def is_phone_number(filename):
     for line in full_file:
 
         # un numéro de telephone belges fais 13 caractères
-        # ex: 0400/00.00.00 = 13 caractères
+        # ex: 0400/00.00.00 = 13 caractères (en comptant à partir de 1, c'est pour cela que je vérifie que line soit
+        # plus petit que et non plus petit et égale.
         if len(line) < 13:
             continue
 

@@ -37,11 +37,14 @@ problems:
         name: Matching phone numbers
         header: |-
             Ecriver le corps de la fonction qui permet de déterminer si un fichier texte contient bien des numéros de téléphone Belge.
-            Votre fonction doit renvoyer une **liste** avec tout les numéros de téléphones Belges qui se trouve dans le fichier. Si il y a rien, retourner la **liste vide**. (regex est autorisé)
+            Votre fonction doit renvoyer une **liste** avec tout les numéros de téléphones Belges qui se trouve dans le fichier. Si il y a rien, retourner la **liste vide**. (le regex est autorisé)
+
+            **Attention** vous devez juste écrire le corps de la fonction, veillez aussi à ouvrir le fichier "filename" passé en paramètre de la fonction.
+
 
             .. code-block:: python
 
-                def matching_phone_numbers(filename):
+                def matching_phone_numbers(filename):  # il ne faut pas réecrire l'entête de la fonction.
         type: code
         default: ''
         language: python
