@@ -19,7 +19,10 @@ en regex `+324|04` il me semble que cela aurait compliqué l'exercice pour très
 
 ## Question 3 : Comparaisons et Hérédité
 
-À completer
+• A la demande des reviews, l'énoncé a été modifié pour introduire un contexte plus clair et cohérent. 
+• Il a été décidé d’approfondir  l'utilisation de l'hérédité en limitant la classe vehicule à un seul attribut au lieu de deux. Il faut désormais définir l'attribut color depuis la classe camion.
+• L'utilisation de l'index a été délaissée au profit de la valeur de l'attribut
+• Révisons des tests
 
 # Lien vers le github: 
 https://github.com/zeykafx/projet1_q2 (le repo. est publique)
