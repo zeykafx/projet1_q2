@@ -11,7 +11,7 @@ import MatchingPhoneNumbers as student
 
 class TestMatchingPhoneNumber(unittest.TestCase):
 
-    def test0_UsPhoneNumber(self):
+    def test0_UsPhoneNumbers(self):
         filename = 'phone_numbers.txt'
         try:
             student_ans = student.matching_phone_numbers(filename)
