@@ -7,7 +7,7 @@ Lien vers le cours inginious: https://inginious.info.ucl.ac.be/course/P1_2A_3
 
 ## Question 1 : Chutes de neiges
 
-À completer
+Le but de cette question est de sortir le mois le plus neigeux en ouvrant un fichier qui recense les chutes de neige sur plusieurs années. A la suite des reviews, de nombreux commentaires ont été ajoutés de manière à rendre le code plus compréhensible. Je n'ai pas eu d'autres remarques sur mon exercice. 
 
 ## Question 2 : Matching Phone Numbers
 
