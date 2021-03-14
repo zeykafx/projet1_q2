@@ -86,7 +86,7 @@ class TestMatchingPhoneNumber(unittest.TestCase):
         phone_numbers = gen_phone(100)
         with open('test5.txt', "w") as gen_file:
             for nbr in phone_numbers:
-                gen_file.write(nbr)
+                gen_file.write(nbr + '\n')
         filename = 'test5.txt'
         try:
             student_ans = student.matching_phone_numbers(filename)
