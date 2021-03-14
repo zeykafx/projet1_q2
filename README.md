@@ -12,7 +12,7 @@ Le but de cette question est de sortir le mois le plus neigeux en ouvrant un fic
 ## Question 2 : Matching Phone Numbers
 
 Suite au reviews, j'ai ajouté plus de commentaires dans les différents fichier, amélioré les messages d'erreur renvoyé 
-quand les tests fail.
+quand les tests fail et j'ai ajouté un test qui génère des numéros aléatoirement pour empecher l'étudiant de "hard coder" les bon numéros des autres fichier.
 
 Je n'ai pas ajouté les numéros belges commencent en +32 en tant que numéros valide car même si c'est simple a verifier
 en regex `+324|04` il me semble que cela aurait compliqué l'exercice pour très peu.
